@@ -1,0 +1,19 @@
+body {
+  background-color:white;
+  color: #d9d9d9;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 200%;
+}
+/* canvas {
+  border: 1px dotted;
+} */
+/* 
+svg {
+  border: 1px solid #777;
+  display: block;
+  margin: 20px auto;
+} */
+/* svg *{cursor:move;} */
