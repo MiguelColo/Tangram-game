@@ -14,9 +14,9 @@
 <body >
     
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink" width="1198" height="800" onclick="drag(event)" id="lienzo" >
-       
-    
+        xmlns:xlink="http://www.w3.org/1999/xlink" width="1198" height="600" onclick="drag(event)" id="lienzo" >
+    <g>
+        <rect x="400" y="100" width="400" height="400" fill="white" stroke="black" stroke-width="1"/>
         <polygon points="0,0 200,0 100,100" transform="" fill="black" stroke="red" stroke-width="1" id="striA"/>
         <polygon points="0,0 200,200 0,400" transform="" fill="blue" stroke="red" stroke-width="1" id="ltriA"/>
         <polygon points="0,400 200,200 400,400" transform="" fill="green" stroke="red" stroke-width="1" id="ltriB" />
@@ -24,9 +24,9 @@
         <polygon points="300,100 200,200 300,300" transform="" fill="yellow" stroke="red" stroke-width="1" id="striB"/>
         <polygon points="300,100 400,200 400,400 300,300" transform=""  fill="red" stroke="red" stroke-width="1" id="rom" />
         <polygon points="200,0 400,0 400,200" transform="" fill="pink" stroke="red" stroke-width="1" id="mtri" />
-    
-
+    </g>
     </svg>
+<button onclick="rotation()">Rotate</button>
 
 </body>
 </html>
