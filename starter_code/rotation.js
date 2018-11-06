@@ -4,8 +4,8 @@ function rotation(e) {
     //     xOrigin = e.toElement.attributes[1].ownerElement.points[0].x;
     //     yOrigin = e.toElement.attributes[1].ownerElement.points[0].y;
     // // // // }else{
-    // var x = e.clientX;
-    // var y = e.clientY;
+    var x = e.clientX;
+    var y = e.clientY;
     var ang = 45;
     // var n=e.clientX.toString() + e.clientY.toString()
     // console.log(n)
@@ -20,7 +20,7 @@ function rotation(e) {
         // striA.setAttribute('transform',`${transStriA} rotate(${ang})`);
         break;
         case "striB":
-        striB.style.WebkitTransformOrigin="100px 300px"
+        striB.style.WebkitTransformOrigin=`${x}px ${y}px` 
         striB.style.transform=`rotate(${ang}deg)`
         // console.log(striB.getAttribute('transform').split(" ")[0].replace(/[^0-9,]/g, "").split(","));
         striB.setAttribute('transform',`${transStriB} rotate(${ang})`);

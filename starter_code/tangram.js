@@ -28,18 +28,20 @@ var x0rom=700;
 var y0rom=300;
 var x0mtri=600;
 var y0mtri=200;
-var win = {
-    striA:false,
-    striB:false,
-    ltriA:false,
-    ltriB:false,
-    squ:false,
-    rom:false,
-    mtri:false
-}
+
 
 }
 
+var xmlns = "http://www.w3.org/2000/svg";
+var elem = document.createElementNS(xmlns, "rect");
+ 
+elem.setAttributeNS(null,"id");
+elem.setAttributeNS(null,"points");
+elem.setAttributeNS(null,"fill");
+elem.setAttributeNS(null,"stroke");
+
+ 
+document.documentElement.appendChild(elem)
 
 
 
