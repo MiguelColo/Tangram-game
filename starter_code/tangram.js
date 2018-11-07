@@ -32,16 +32,6 @@ var y0mtri=200;
 
 }
 
-var xmlns = "http://www.w3.org/2000/svg";
-var elem = document.createElementNS(xmlns, "rect");
- 
-elem.setAttributeNS(null,"id");
-elem.setAttributeNS(null,"points");
-elem.setAttributeNS(null,"fill");
-elem.setAttributeNS(null,"stroke");
-
- 
-document.documentElement.appendChild(elem)
 
 
 

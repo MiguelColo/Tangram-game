@@ -96,7 +96,8 @@ var levels={
                 side2:"141,42",
                 hypotenuse:"200",
                 xSolution:"700",
-                ySolution:"200"
+                ySolution:"200",
+                transform:"translate(0,0)"
             },
             striB:{
                 id:"striB",
@@ -107,7 +108,8 @@ var levels={
                 side2:"141,42",
                 hypotenuse:"200",
                 xSolution:"700",
-                ySolution:"400"
+                ySolution:"400",
+                transform:"translate(0,200)"
             },
             ltriA:{
                 id:"ltriA",
@@ -118,7 +120,8 @@ var levels={
                 side2:"282,84",
                 hypotenuse:"400",
                 xSolution:"700",
-                ySolution:"400"
+                ySolution:"400",
+                transform:"translate(0,400)"
             },
             ltriB:{
                 id:"ltriB",
@@ -129,7 +132,8 @@ var levels={
                 side2:"282,84",
                 hypotenuse:"400",
                 xSolution:"318",
-                ySolution:"500"
+                ySolution:"500",
+                transform:"translate(0,600)"
             },
             squ:{
                 id:"squ",
@@ -138,7 +142,8 @@ var levels={
                 stroke:"1px red",
                 side:"141,42",
                 xSolution:"600",
-                ySolution:"300"
+                ySolution:"300",
+                transform:"translate(300,0)"
             },
             rom:{
                 id:"rom",
@@ -148,7 +153,8 @@ var levels={
                 longSide:"200",
                 shortSide:"141,42",
                 xSolution:"700",
-                ySolution:"200"
+                ySolution:"200",
+                transform:"translate(500,0)"
             },
             mtri:{
                 id:"mtri",
@@ -159,7 +165,8 @@ var levels={
                 side2:"200",
                 hypotenuse:"282,84",
                 xSolution:"318",
-                ySolution:"500"
+                ySolution:"500",
+                transform:"translate(800,0)"
             }
         },
         board:{
