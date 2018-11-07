@@ -2,349 +2,482 @@ var levels={
     level1:{
         name:"square",
         polygons:{
+            rect:{
+                id:"rect",
+                x:"400",
+                y:"200",
+                width:"400",
+                height:"400",
+                stroke:"3px black",
+                fill:"black",
+            },
             striA: {
                 id:"striA",
                 points:"0,0 200,0 100,100",
-                fill:"black",
-                stroke:"1px red",
+                fill:"blue",
+                stroke:"red",
                 side1:"141,42",
                 side2:"141,42",
                 hypotenuse:"200",
                 xSolution:"400",
-                ySolution:"200"
+                ySolution:"200",
+                xSolbouMin:"380",
+                xSolbouMax:"420",
+                ySolbouMin:"180",
+                ySolbouMax:"220"
             },
             striB:{
                 id:"striB",
                 points:"300,100 200,200 300,300",
-                fill:"black",
+                fill:"yellow",
                 stroke:"1px red",
                 side1:"141,42",
                 side2:"141,42",
                 hypotenuse:"200",
                 xSolution:"700",
-                ySolution:"200"
+                ySolution:"300",
+                xSolbouMin:"680",
+                xSolbouMax:"720",
+                ySolbouMin:"280",
+                ySolbouMax:"320"
             },
             ltriA:{
                 id:"ltriA",
                 points:"0,0 200,200 0,400",
-                fill:"black",
+                fill:"red",
                 stroke:"1px red",
                 side1:"282,84",
                 side2:"282,84",
                 hypotenuse:"400",
                 xSolution:"400",
-                ySolution:"100"
+                ySolution:"200",
+                xSolbouMin:"380",
+                xSolbouMax:"420",
+                ySolbouMin:"180",
+                ySolbouMax:"220"
             },
             ltriB:{
                 id:"ltriB",
                 points:"0,400 200,200 400,400",
-                fill:"black",
+                fill:"green",
                 stroke:"1px red",
                 side1:"282,84",
                 side2:"282,84",
                 hypotenuse:"400",
                 xSolution:"400",
-                ySolution:"500"
+                ySolution:"600",
+                xSolbouMin:"380",
+                xSolbouMax:"420",
+                ySolbouMin:"580",
+                ySolbouMax:"620"
             },
             squ:{
                 id:"squ",
                 points:"200,0 300,100 200,200 100,100",
-                fill:"black",
+                fill:"grey",
                 stroke:"1px red",
                 side:"141,42",
                 xSolution:"600",
-                ySolution:"100"
+                ySolution:"200",
+                xSolbouMin:"580",
+                xSolbouMax:"620",
+                ySolbouMin:"180",
+                ySolbouMax:"220"
             },
             rom:{
                 id:"rom",
                 points:"300,100 400,200 400,400 300,300",
-                fill:"black",
+                fill:"orange",
                 stroke:"1px red",
                 longSide:"200",
                 shortSide:"141,42",
                 xSolution:"700",
-                ySolution:"200"
+                ySolution:"300",
+                xSolbouMin:"680",
+                xSolbouMax:"720",
+                ySolbouMin:"280",
+                ySolbouMax:"320"
             },
             mtri:{
                 id:"mtri",
                 points:"200,0 400,0 400,200",
-                fill:"black",
+                fill:"pink",
                 stroke:"1px red",
                 side1:"200",
                 side2:"200",
                 hypotenuse:"282,84",
                 xSolution:"600",
-                ySolution:"100"
+                ySolution:"200",
+                xSolbouMin:"580",
+                xSolbouMax:"620",
+                ySolbouMin:"180",
+                ySolbouMax:"220"
             }
         },
-        board:{
-            x:400,
-            y:200,
-            width:400,
-            height:400
-        }
+    
     },
     level2:{
-        name:"camel",
-        polygons:{
-            striA: {
-                id:"striA",
-                points:"400,100 600,100 500,200",
-                fill:"black",
-                stroke:"1px red",
-                side1:"141,42",
-                side2:"141,42",
-                hypotenuse:"200",
-                xSolution:"700",
-                ySolution:"200",
-                transform:"translate(0,0)"
-            },
-            striB:{
-                id:"striB",
-                points:"400,300 400,500 500,400",
-                fill:"black",
-                stroke:"1px red",
-                side1:"141,42",
-                side2:"141,42",
-                hypotenuse:"200",
-                xSolution:"700",
-                ySolution:"400",
-                transform:"translate(0,200)"
-            },
-            ltriA:{
-                id:"ltriA",
-                points:"400,300 400,700 200,200",
-                fill:"black",
-                stroke:"1px red",
-                side1:"282,84",
-                side2:"282,84",
-                hypotenuse:"400",
-                xSolution:"700",
-                ySolution:"400",
-                transform:"translate(0,400)"
-            },
-            ltriB:{
-                id:"ltriB",
-                points:"18,400 18,682 300,400",
-                fill:"black",
-                stroke:"1px red",
-                side1:"282,84",
-                side2:"282,84",
-                hypotenuse:"400",
-                xSolution:"318",
-                ySolution:"500",
-                transform:"translate(0,600)"
-            },
-            squ:{
-                id:"squ",
-                points:"300,200 400,300 300,400 200,300",
-                fill:"black",
-                stroke:"1px red",
-                side:"141,42",
-                xSolution:"600",
-                ySolution:"300",
-                transform:"translate(300,0)"
-            },
-            rom:{
-                id:"rom",
-                points:"400,100 400,300 500,400 500,200",
-                fill:"black",
-                stroke:"1px red",
-                longSide:"200",
-                shortSide:"141,42",
-                xSolution:"700",
-                ySolution:"200",
-                transform:"translate(500,0)"
-            },
-            mtri:{
-                id:"mtri",
-                points:"18,400 159,259 300,400",
-                fill:"black",
-                stroke:"1px red",
-                side1:"200",
-                side2:"200",
-                hypotenuse:"282,84",
-                xSolution:"318",
-                ySolution:"500",
-                transform:"translate(800,0)"
-            }
-        },
-        board:{
-            x:300,
-            y:100,
-            width:600,
-            height:600
-        }
-    },
-    level3:{
         name:"duck",
         polygons:{
+            rect:{
+                id:"rect",
+                x:"210",
+                y:"110",
+                width:"750",
+                height:"400",
+                stroke:"5px black",
+            },
             striA: {
                 id:"striA",
                 points:"210,310 310,410 210,510",
-                fill:"black",
+                fill:"blue",
                 stroke:"1px red",
                 side1:"141,42",
                 side2:"141,42",
                 hypotenuse:"200",
                 xSolution:"210",
-                ySolution:"310"
+                ySolution:"210",
+                xSolbouMin:"190",
+                xSolbouMax:"230",
+                ySolbouMin:"190",
+                ySolbouMax:"230"
             },
             striB:{
                 id:"striB",
                 points:"733,469 933,469 833,569",
-                fill:"black",
+                fill:"yellow",
                 stroke:"1px red",
                 side1:"141,42",
                 side2:"141,42",
                 hypotenuse:"200",
                 xSolution:"733",
-                ySolution:"469"
+                ySolution:"369",
+                xSolbouMin:"713",
+                xSolbouMax:"753",
+                ySolbouMin:"349",
+                ySolbouMax:"389"
             },
             ltriA:{
                 id:"ltriA",
-                points:"310,410 592,328 592,610",
-                fill:"black",
+                points:"310,610 592,328 592,610",
+                fill:"red",
                 stroke:"1px red",
                 side1:"282,84",
                 side2:"282,84",
                 hypotenuse:"400",
                 xSolution:"310",
-                ySolution:"610"
+                ySolution:"510",
+                xSolbouMin:"290",
+                xSolbouMax:"330",
+                ySolbouMin:"490",
+                ySolbouMax:"530"
             },
             ltriB:{
                 id:"ltriB",
                 points:"592,610 592,328 874,328",
-                fill:"black",
+                fill:"green",
                 stroke:"1px red",
                 side1:"282,84",
                 side2:"282,84",
                 hypotenuse:"400",
                 xSolution:"592",
-                ySolution:"610"
+                ySolution:"510",
+                xSolbouMin:"572",
+                xSolbouMax:"612",
+                ySolbouMin:"490",
+                ySolbouMax:"530"
             },
             squ:{
                 id:"squ",
                 points:"310,210 410,310 310,410 210,310",
-                fill:"black",
+                fill:"grey",
                 stroke:"1px red",
                 side:"141,42",
                 xSolution:"310",
-                ySolution:"210"
+                ySolution:"110",
+                xSolbouMin:"290",
+                xSolbouMax:"330",
+                ySolbouMin:"90",
+                ySolbouMax:"130"
             },
             rom:{
                 id:"rom",
                 points:"410,310 410,510 310,610 310,410",
-                fill:"black",
+                fill:"orange",
                 stroke:"1px red",
                 longSide:"200",
                 shortSide:"141,42",
                 xSolution:"410",
-                ySolution:"310"
+                ySolution:"210",
+                xSolbouMin:"390",
+                xSolbouMax:"430",
+                ySolbouMin:"190",
+                ySolbouMax:"230"
             },
             mtri:{
                 id:"mtri",
                 points:"592,610 733,469 874,610",
-                fill:"black",
+                fill:"pink",
                 stroke:"1px red",
                 side1:"200",
                 side2:"200",
                 hypotenuse:"282,84",
                 xSolution:"592",
-                ySolution:"610"
+                ySolution:"510",
+                xSolbouMin:"572",
+                xSolbouMax:"612",
+                ySolbouMin:"490",
+                ySolbouMax:"530"
             }
         },
-        board:{
-            x:210,
-            y:310,
-            width:740,
-            height:400
-        }
+       
+    },
+    level3:{
+        name:"camel",
+        polygons:{
+            rect:{
+                id:"rect",
+                x:"300",
+                y:"100",
+                width:"600",
+                height:"700",
+                stroke:"5px black",
+            },
+            striA: {
+                id:"striA",
+                points:"600,100 400,100 500,200",
+                fill:"blue",
+                stroke:"1px red",
+                side1:"141,42",
+                side2:"141,42",
+                hypotenuse:"200",
+                xSolution:"900",
+                ySolution:"100",
+                xSolbouMin:"880",
+                xSolbouMax:"920",
+                ySolbouMin:"80",
+                ySolbouMax:"120"
+                
+            },
+            striB:{
+                id:"striB",
+                points:"400,300 400,500 500,400",
+                fill:"yellow",
+                stroke:"1px red",
+                side1:"141,42",
+                side2:"141,42",
+                hypotenuse:"200",
+                xSolution:"700",
+                ySolution:"300",
+                xSolbouMin:"680",
+                xSolbouMax:"720",
+                ySolbouMin:"280",
+                ySolbouMax:"320"
+                
+            },
+            ltriA:{
+                id:"ltriA",
+                points:"400,300 400,700 200,500",
+                fill:"red",
+                stroke:"1px red",
+                side1:"282,84",
+                side2:"282,84",
+                hypotenuse:"400",
+                xSolution:"700",
+                ySolution:"300",
+                xSolbouMin:"680",
+                xSolbouMax:"720",
+                ySolbouMin:"280",
+                ySolbouMax:"320"
+                
+            },
+            ltriB:{
+                id:"ltriB",
+                points:"300,400 18,400 18,682",
+                fill:"green",
+                stroke:"1px red",
+                side1:"282,84",
+                side2:"282,84",
+                hypotenuse:"400",
+                xSolution:"600",
+                ySolution:"400",
+                xSolbouMin:"580",
+                xSolbouMax:"620",
+                ySolbouMin:"380",
+                ySolbouMax:"420"
+               
+            },
+            squ:{
+                id:"squ",
+                points:"400,300 300,400 200,300 300,200",
+                fill:"grey",
+                stroke:"1px red",
+                side:"141,42",
+                xSolution:"700",
+                ySolution:"300",
+                xSolbouMin:"680",
+                xSolbouMax:"720",
+                ySolbouMin:"280",
+                ySolbouMax:"320"
+                
+            },
+            rom:{
+                id:"rom",
+                points:"400,100 400,300 500,400 500,200",
+                fill:"orange",
+                stroke:"1px red",
+                longSide:"200",
+                shortSide:"141,42",
+                xSolution:"700",
+                ySolution:"100",
+                xSolbouMin:"680",
+                xSolbouMax:"720",
+                ySolbouMin:"80",
+                ySolbouMax:"120"
+                
+            },
+            mtri:{
+                id:"mtri",
+                points:"300,400 18,400 159,259 ",
+                fill:"pink",
+                stroke:"1px red",
+                side1:"200",
+                side2:"200",
+                hypotenuse:"282,84",
+                xSolution:"600",
+                ySolution:"400",
+                xSolbouMin:"580",
+                xSolbouMax:"620",
+                ySolbouMin:"380",
+                ySolbouMax:"420"
+                
+            }
+        },
+        
     },
     level4:{
         name:"horse",
         polygons:{
+            rect:{
+                id:"rect",
+                x:"100",
+                y:"100",
+                width:"1000",
+                height:"440",
+                stroke:"5px black",
+            },
             striA: {
                 id:"striA",
-                points:"310,741 410,841 210,841",
-                fill:"black",
+                points:"310,341 410,441 210,441",
+                fill:"blue",
                 stroke:"1px red",
                 side1:"141,42",
                 side2:"141,42",
                 hypotenuse:"200",
                 xSolution:"310",
-                ySolution:"741"
+                ySolution:"841",
+                xSolbouMin:"290",
+                xSolbouMax:"330",
+                ySolbouMin:"820",
+                ySolbouMax:"860",
+                
             },
             striB:{
                 id:"striB",
-                points:"710,741 810,841 610,841",
-                fill:"black",
+                points:"710,341 810,441 610,441",
+                fill:"yellow",
                 stroke:"1px red",
                 side1:"141,42",
                 side2:"141,42",
                 hypotenuse:"200",
                 xSolution:"710",
-                ySolution:"741"
+                ySolution:"841",
+                xSolbouMin:"690",
+                xSolbouMax:"730",
+                ySolbouMin:"820",
+                ySolbouMax:"860",
+              
             },
             ltriA:{
                 id:"ltriA",
                 points:"310,341 510,541 310,741",
-                fill:"black",
+                fill:"red",
                 stroke:"1px red",
                 side1:"282,84",
                 side2:"282,84",
                 hypotenuse:"400",
                 xSolution:"310",
-                ySolution:"341"
+                ySolution:"441",
+                xSolbouMin:"290",
+                xSolbouMax:"330",
+                ySolbouMin:"420",
+                ySolbouMax:"460",
+                
             },
             ltriB:{
                 id:"ltriB",
                 points:"510,541 710,341 710,741",
-                fill:"black",
+                fill:"green",
                 stroke:"1px red",
                 side1:"282,84",
                 side2:"282,84",
                 hypotenuse:"400",
                 xSolution:"510",
-                ySolution:"541"
+                ySolution:"641",
+                xSolbouMin:"490",
+                xSolbouMax:"530",
+                ySolbouMin:"620",
+                ySolbouMax:"660",
+                
             },
             squ:{
                 id:"squ",
                 points:"210,241 310,341 210,441 110,341",
-                fill:"black",
+                fill:"grey",
                 stroke:"1px red",
                 side:"141,42",
                 xSolution:"210",
-                ySolution:"241"
+                ySolution:"341",
+                xSolbouMin:"190",
+                xSolbouMax:"230",
+                ySolbouMin:"320",
+                ySolbouMax:"360",
+                
             },
             rom:{
                 id:"rom",
                 points:"710,341 910,341 1010,441 810,441",
-                fill:"black",
+                fill:"orange",
                 stroke:"1px red",
                 longSide:"200",
                 shortSide:"141,42",
                 xSolution:"710",
-                ySolution:"341"
+                ySolution:"441",
+                xSolbouMin:"690",
+                xSolbouMax:"730",
+                ySolbouMin:"420",
+                ySolbouMax:"460",
+                
             },
             mtri:{
                 id:"mtri",
-                points:"210,241 310,110 310,392",
-                fill:"black",
+                points:"251,10 251,292 110,141",
+                fill:"pink",
                 stroke:"1px red",
                 side1:"200",
                 side2:"200",
                 hypotenuse:"282,84",
                 xSolution:"210",
-                ySolution:"241"
+                ySolution:"341",
+                xSolbouMin:"190",
+                xSolbouMax:"230",
+                ySolbouMin:"320",
+                ySolbouMax:"360",
+                
             }
         },
-        board:{
-            x:110,
-            y:310,
-            width:1000,
-            height:440
-        }
+       
     },
     
+      
 }

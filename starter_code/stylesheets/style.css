@@ -1,5 +1,5 @@
 body {
-  background-color:white;
+  background-color:rgb(47, 255, 116);
   color: #d9d9d9;
   font-family: Arial, sans-serif;
   text-align: center;
@@ -7,13 +7,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
   line-height: 200%;
 }
+
 svg{
   width: 100%;
 }
 #striB{
-  fill: yellow;
+  /* fill: yellow;
   stroke: red;
   /* transform: rotate(45deg);
   transform-origin: 300px 100px; */
-  border:1px solid black; 
+  /* border:1px solid black;  */ */
 }
