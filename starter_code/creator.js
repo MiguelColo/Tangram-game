@@ -176,7 +176,7 @@ var levels={
             },
             ltriB:{
                 id:"ltriB",
-                points:"392,410 392,128 674,128",
+                points:"92,410 92,128 374,128",
                 fill:"green",
                 stroke:"1px red",
                 side1:"282,84",
@@ -218,7 +218,7 @@ var levels={
             },
             mtri:{
                 id:"mtri",
-                points:"292,310 433,169 574,310",
+                points:"92,310 233,169 374,310",
                 fill:"pink",
                 stroke:"1px red",
                 side1:"200",
@@ -249,7 +249,7 @@ var levels={
             },
             striA: {
                 id:"striA",
-                points:"600,100 400,100 500,200",
+                points:"300,100 100,100 200,200",
                 fill:"blue",
                 stroke:"1px red",
                 side1:"141,42",
@@ -327,7 +327,7 @@ var levels={
             },
             rom:{
                 id:"rom",
-                points:"400,100 400,300 500,400 500,200",
+                points:"100,100 100,300 200,400 200,200",
                 fill:"orange",
                 stroke:"1px red",
                 longSide:"200",

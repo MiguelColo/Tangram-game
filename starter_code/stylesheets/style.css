@@ -18,7 +18,7 @@ svg{
 .level1{
   width: 200px;
   height: 200px;
-  background-image: url("/home/usuario/projects/Tangram-game/images/square.png");
+  background-image: url("../../images/square.png");
   margin-right: 30px;
   background-size:100%;
   background-repeat: no-repeat
@@ -26,7 +26,7 @@ svg{
 .level2{
   width: 200px;
   height: 200px;
-  background-image: url("/home/usuario/projects/Tangram-game/images/duck.png");
+  background-image: url("../../images/duck.png");
   margin-right: 30px;
   background-size:100%;
   background-repeat: no-repeat
@@ -34,7 +34,7 @@ svg{
 .level3{
   width: 200px;
   height: 200px;
-  background-image: url("/home/usuario/projects/Tangram-game/images/camel.png");
+  background-image: url("../../images/camel.png");
   margin-right: 30px;
   background-size:100%;
   background-repeat: no-repeat

@@ -45,9 +45,10 @@ Game.prototype.generator=function(){
             this.document.appendChild(elem)  
          }.bind(this))
          this.deactivate()
-         this.activate()
+         
 }
 Game.prototype.changeLevel= function(){
+    this.activate()
     this.win = {
         rect: true,
         striA:false,
