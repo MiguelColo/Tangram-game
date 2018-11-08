@@ -1,0 +1,13 @@
+body {
+    background-image: url("../../images/background.jpg");
+    background-repeat:no-repeat;
+    display: flex;
+    justify-content: center
+  }
+button{
+   height:100px;
+   width: 200px;
+   color:red;
+   font-size: 30px;
+   margin-top: 300px;
+}

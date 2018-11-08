@@ -265,7 +265,7 @@ var levels={
             },
             striB:{
                 id:"striB",
-                points:"400,300 400,500 500,400",
+                points:"200,100 200,300 300,200",
                 fill:"yellow",
                 stroke:"1px red",
                 side1:"141,42",

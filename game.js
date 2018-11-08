@@ -44,8 +44,8 @@ Game.prototype.generator=function(){
             
             this.document.appendChild(elem)  
          }.bind(this))
-         
-    
+         this.deactivate()
+         this.activate()
 }
 Game.prototype.changeLevel= function(){
     this.win = {
@@ -112,7 +112,7 @@ Game.prototype.approach=function(e, polygon){
         setTimeout(function(){
             if(!alert("Done")){
                 this.counter++
-                console.log(this.document);
+                // console.log(this.document);
                 this.keysObj.forEach(function(){
                     this.document.removeChild(this.document.firstChild)
                 }.bind(this))
@@ -132,7 +132,9 @@ Game.prototype.deactivate=function(){
     document.getElementById("generate").disabled = true;
 }
 
-
+Game.prototype.activate=function(){
+    document.getElementById("generate").disabled = false;
+}
 
 
 Game.prototype.svg = function(svg){
