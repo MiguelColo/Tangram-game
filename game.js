@@ -3,6 +3,8 @@ this.document;
 this.xmlns = "http://www.w3.org/2000/svg";
 this.x0;
 this.y0;
+this.level = 0;
+this.counter=0;
 this.key=levels.level1.polygons;
 this.keysObj=Object.keys(this.key);
 this.win = {
@@ -36,10 +38,7 @@ Game.prototype.generator=function(){
                 elem.setAttributeNS(null,"points", obj.points);
                 elem.setAttributeNS(null,"fill",obj.fill);
                 elem.setAttribute("transform",`translate(${Math.floor(Math.random() * (800-100)+100)},${Math.floor(Math.random() *(200-50)+50)})`);
-                // elem.setAttribute("src", "../images/camel.xcf");
-                // elem.setAttribute("width", "50");
-                // elem.setAttribute("height", "50");
-                // document.body.appendChild(elem);
+                
             }
             elem.setAttributeNS(null,"stroke", obj.stroke);
             
@@ -49,6 +48,27 @@ Game.prototype.generator=function(){
     
 }
 Game.prototype.changeLevel= function(){
+    this.win = {
+        rect: true,
+        striA:false,
+        striB:false,
+        ltriA:false,
+        ltriB:false,
+        squ:false,
+        rom:false,
+        mtri:false
+    }
+    if (this.counter===1){
+        this.key=levels.level2.polygons;
+        document.getElementById("level").classList.add('level2');
+        document.getElementById("level").classList.remove('level1');
+    }else if (this.counter===2){
+        this.key=levels.level3.polygons;
+        document.getElementById("level").classList.add('level3');
+        document.getElementById("level").classList.remove('level2');
+    }else {
+        alert("You WIN")
+    }
 }
 
 Game.prototype.drag=function(e){
@@ -62,7 +82,7 @@ Game.prototype.drag=function(e){
         var x = this.x0 - this.xOrigin;
         var y = this.y0 - this.yOrigin;
         var polygon = document.getElementById(this.id);
-        polygon.setAttribute("transform", `translate(${x}, ${y})`)
+        polygon.setAttribute("transform", `translate(${x}, ${y})`);
         this.approach(e, polygon);
     }
     
@@ -85,14 +105,26 @@ Game.prototype.approach=function(e, polygon){
     
     
     var win = this.keysObj.every(function(id){
-        console.log(id);
         return this.win[id];
     }.bind(this))
     
     if(win){
         setTimeout(function(){
-            alert("Done");
-        },1000)    
+            if(!alert("Done")){
+                this.counter++
+                console.log(this.document);
+                this.keysObj.forEach(function(){
+                    this.document.removeChild(this.document.firstChild)
+                }.bind(this))
+                this.changeLevel();
+                try {
+                    this.document.removeChild(this.document.firstChild)
+                } catch (error) {
+                    console.log(error);
+                    
+                }
+            };
+        }.bind(this),1000)    
     }
 }
 

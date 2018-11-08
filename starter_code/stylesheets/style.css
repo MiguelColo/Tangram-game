@@ -3,8 +3,6 @@ body {
   color: #d9d9d9;
   font-family: Arial, sans-serif;
   text-align: center;
-  /* -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
   line-height: 200%;
   
 }
@@ -18,7 +16,26 @@ svg{
   justify-content: flex-start;
 }
 .level1{
-  
-  background-image: url("/home/usuario/projects/Tangram-game/images/duck.xcf");
-  
+  width: 200px;
+  height: 200px;
+  background-image: url("/home/usuario/projects/Tangram-game/images/square.png");
+  margin-right: 30px;
+  background-size:100%;
+  background-repeat: no-repeat
+}
+.level2{
+  width: 200px;
+  height: 200px;
+  background-image: url("/home/usuario/projects/Tangram-game/images/duck.png");
+  margin-right: 30px;
+  background-size:100%;
+  background-repeat: no-repeat
+}
+.level3{
+  width: 200px;
+  height: 200px;
+  background-image: url("/home/usuario/projects/Tangram-game/images/camel.png");
+  margin-right: 30px;
+  background-size:100%;
+  background-repeat: no-repeat
 }

@@ -114,7 +114,7 @@ var levels={
                 ySolbouMax:"120"
             },
         },
-        src:("../images/square.xcf")
+        // src:("../images/square.xcf")
         
     
     },
@@ -232,7 +232,7 @@ var levels={
                 ySolbouMax:"530"
             },
         },
-        src:("../images/duck.xcf")
+        // src:("../images/duck.xcf")
         
        
     },
@@ -250,7 +250,7 @@ var levels={
             striA: {
                 id:"striA",
                 points:"600,100 400,100 500,200",
-                fill:"black",
+                fill:"blue",
                 stroke:"1px red",
                 side1:"141,42",
                 side2:"141,42",
@@ -266,7 +266,7 @@ var levels={
             striB:{
                 id:"striB",
                 points:"400,300 400,500 500,400",
-                fill:"black",
+                fill:"yellow",
                 stroke:"1px red",
                 side1:"141,42",
                 side2:"141,42",
@@ -282,7 +282,7 @@ var levels={
             ltriA:{
                 id:"ltriA",
                 points:"400,100 400,500 200,300",
-                fill:"black",
+                fill:"red",
                 stroke:"1px red",
                 side1:"282,84",
                 side2:"282,84",
@@ -298,7 +298,7 @@ var levels={
             ltriB:{
                 id:"ltriB",
                 points:"300,200 18,200 18,482",
-                fill:"black",
+                fill:"green",
                 stroke:"1px red",
                 side1:"282,84",
                 side2:"282,84",
@@ -314,7 +314,7 @@ var levels={
             squ:{
                 id:"squ",
                 points:"400,300 300,400 200,300 300,200",
-                fill:"black",
+                fill:"grey",
                 stroke:"1px red",
                 side:"141,42",
                 xSolution:"700",
@@ -328,7 +328,7 @@ var levels={
             rom:{
                 id:"rom",
                 points:"400,100 400,300 500,400 500,200",
-                fill:"black",
+                fill:"orange",
                 stroke:"1px red",
                 longSide:"200",
                 shortSide:"141,42",
@@ -343,7 +343,7 @@ var levels={
             mtri:{
                 id:"mtri",
                 points:"300,400 18,400 159,259 ",
-                fill:"black",
+                fill:"pink",
                 stroke:"1px red",
                 side1:"200",
                 side2:"200",
@@ -357,7 +357,7 @@ var levels={
                 
             },
         },
-        src:("../images/camel.xcf")
+        // src:("../images/camel.xcf")
         
     },
     
