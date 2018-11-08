@@ -5,7 +5,7 @@ var levels={
             rect:{
                 id:"rect",
                 x:"400",
-                y:"200",
+                y:"100",
                 width:"400",
                 height:"400",
                 stroke:"3px black",
@@ -15,16 +15,16 @@ var levels={
                 id:"striA",
                 points:"0,0 200,0 100,100",
                 fill:"blue",
-                stroke:"red",
+                stroke:"1px red",
                 side1:"141,42",
                 side2:"141,42",
                 hypotenuse:"200",
                 xSolution:"400",
-                ySolution:"200",
+                ySolution:"100",
                 xSolbouMin:"380",
                 xSolbouMax:"420",
-                ySolbouMin:"180",
-                ySolbouMax:"220"
+                ySolbouMin:"80",
+                ySolbouMax:"120"
             },
             striB:{
                 id:"striB",
@@ -35,11 +35,11 @@ var levels={
                 side2:"141,42",
                 hypotenuse:"200",
                 xSolution:"700",
-                ySolution:"300",
+                ySolution:"200",
                 xSolbouMin:"680",
                 xSolbouMax:"720",
-                ySolbouMin:"280",
-                ySolbouMax:"320"
+                ySolbouMin:"180",
+                ySolbouMax:"220"
             },
             ltriA:{
                 id:"ltriA",
@@ -50,11 +50,11 @@ var levels={
                 side2:"282,84",
                 hypotenuse:"400",
                 xSolution:"400",
-                ySolution:"200",
+                ySolution:"100",
                 xSolbouMin:"380",
                 xSolbouMax:"420",
-                ySolbouMin:"180",
-                ySolbouMax:"220"
+                ySolbouMin:"80",
+                ySolbouMax:"120"
             },
             ltriB:{
                 id:"ltriB",
@@ -65,11 +65,11 @@ var levels={
                 side2:"282,84",
                 hypotenuse:"400",
                 xSolution:"400",
-                ySolution:"600",
+                ySolution:"500",
                 xSolbouMin:"380",
                 xSolbouMax:"420",
-                ySolbouMin:"580",
-                ySolbouMax:"620"
+                ySolbouMin:"480",
+                ySolbouMax:"520"
             },
             squ:{
                 id:"squ",
@@ -78,11 +78,11 @@ var levels={
                 stroke:"1px red",
                 side:"141,42",
                 xSolution:"600",
-                ySolution:"200",
+                ySolution:"100",
                 xSolbouMin:"580",
                 xSolbouMax:"620",
-                ySolbouMin:"180",
-                ySolbouMax:"220"
+                ySolbouMin:"80",
+                ySolbouMax:"120"
             },
             rom:{
                 id:"rom",
@@ -92,11 +92,11 @@ var levels={
                 longSide:"200",
                 shortSide:"141,42",
                 xSolution:"700",
-                ySolution:"300",
+                ySolution:"200",
                 xSolbouMin:"680",
                 xSolbouMax:"720",
-                ySolbouMin:"280",
-                ySolbouMax:"320"
+                ySolbouMin:"180",
+                ySolbouMax:"220"
             },
             mtri:{
                 id:"mtri",
@@ -107,13 +107,15 @@ var levels={
                 side2:"200",
                 hypotenuse:"282,84",
                 xSolution:"600",
-                ySolution:"200",
+                ySolution:"100",
                 xSolbouMin:"580",
                 xSolbouMax:"620",
-                ySolbouMin:"180",
-                ySolbouMax:"220"
-            }
+                ySolbouMin:"80",
+                ySolbouMax:"120"
+            },
         },
+        src:("../images/square.xcf")
+        
     
     },
     level2:{
@@ -129,7 +131,7 @@ var levels={
             },
             striA: {
                 id:"striA",
-                points:"210,310 310,410 210,510",
+                points:"110,210 210,310 110,410",
                 fill:"blue",
                 stroke:"1px red",
                 side1:"141,42",
@@ -144,7 +146,7 @@ var levels={
             },
             striB:{
                 id:"striB",
-                points:"733,469 933,469 833,569",
+                points:"33,269 233,269 133,369",
                 fill:"yellow",
                 stroke:"1px red",
                 side1:"141,42",
@@ -159,7 +161,7 @@ var levels={
             },
             ltriA:{
                 id:"ltriA",
-                points:"310,610 592,328 592,610",
+                points:"110,410 392,128 392,410",
                 fill:"red",
                 stroke:"1px red",
                 side1:"282,84",
@@ -174,7 +176,7 @@ var levels={
             },
             ltriB:{
                 id:"ltriB",
-                points:"592,610 592,328 874,328",
+                points:"392,410 392,128 674,128",
                 fill:"green",
                 stroke:"1px red",
                 side1:"282,84",
@@ -202,7 +204,7 @@ var levels={
             },
             rom:{
                 id:"rom",
-                points:"410,310 410,510 310,610 310,410",
+                points:"210,110 210,310 110,410 110,210",
                 fill:"orange",
                 stroke:"1px red",
                 longSide:"200",
@@ -216,7 +218,7 @@ var levels={
             },
             mtri:{
                 id:"mtri",
-                points:"592,610 733,469 874,610",
+                points:"292,310 433,169 574,310",
                 fill:"pink",
                 stroke:"1px red",
                 side1:"200",
@@ -228,8 +230,10 @@ var levels={
                 xSolbouMax:"612",
                 ySolbouMin:"490",
                 ySolbouMax:"530"
-            }
+            },
         },
+        src:("../images/duck.xcf")
+        
        
     },
     level3:{
@@ -238,7 +242,7 @@ var levels={
             rect:{
                 id:"rect",
                 x:"300",
-                y:"100",
+                y:"10",
                 width:"600",
                 height:"700",
                 stroke:"5px black",
@@ -246,238 +250,240 @@ var levels={
             striA: {
                 id:"striA",
                 points:"600,100 400,100 500,200",
-                fill:"blue",
+                fill:"black",
                 stroke:"1px red",
                 side1:"141,42",
                 side2:"141,42",
                 hypotenuse:"200",
                 xSolution:"900",
-                ySolution:"100",
+                ySolution:"10",
                 xSolbouMin:"880",
                 xSolbouMax:"920",
-                ySolbouMin:"80",
-                ySolbouMax:"120"
+                ySolbouMin:"0",
+                ySolbouMax:"30"
                 
             },
             striB:{
                 id:"striB",
                 points:"400,300 400,500 500,400",
-                fill:"yellow",
+                fill:"black",
                 stroke:"1px red",
                 side1:"141,42",
                 side2:"141,42",
                 hypotenuse:"200",
                 xSolution:"700",
-                ySolution:"300",
+                ySolution:"210",
                 xSolbouMin:"680",
                 xSolbouMax:"720",
-                ySolbouMin:"280",
-                ySolbouMax:"320"
+                ySolbouMin:"190",
+                ySolbouMax:"230"
                 
             },
             ltriA:{
                 id:"ltriA",
-                points:"400,300 400,700 200,500",
-                fill:"red",
+                points:"400,100 400,500 200,300",
+                fill:"black",
                 stroke:"1px red",
                 side1:"282,84",
                 side2:"282,84",
                 hypotenuse:"400",
                 xSolution:"700",
-                ySolution:"300",
+                ySolution:"210",
                 xSolbouMin:"680",
                 xSolbouMax:"720",
-                ySolbouMin:"280",
-                ySolbouMax:"320"
+                ySolbouMin:"190",
+                ySolbouMax:"230"
                 
             },
             ltriB:{
                 id:"ltriB",
-                points:"300,400 18,400 18,682",
-                fill:"green",
+                points:"300,200 18,200 18,482",
+                fill:"black",
                 stroke:"1px red",
                 side1:"282,84",
                 side2:"282,84",
                 hypotenuse:"400",
                 xSolution:"600",
-                ySolution:"400",
+                ySolution:"310",
                 xSolbouMin:"580",
                 xSolbouMax:"620",
-                ySolbouMin:"380",
-                ySolbouMax:"420"
+                ySolbouMin:"290",
+                ySolbouMax:"330"
                
             },
             squ:{
                 id:"squ",
                 points:"400,300 300,400 200,300 300,200",
-                fill:"grey",
+                fill:"black",
                 stroke:"1px red",
                 side:"141,42",
                 xSolution:"700",
-                ySolution:"300",
+                ySolution:"210",
                 xSolbouMin:"680",
                 xSolbouMax:"720",
-                ySolbouMin:"280",
-                ySolbouMax:"320"
+                ySolbouMin:"190",
+                ySolbouMax:"230"
                 
             },
             rom:{
                 id:"rom",
                 points:"400,100 400,300 500,400 500,200",
-                fill:"orange",
+                fill:"black",
                 stroke:"1px red",
                 longSide:"200",
                 shortSide:"141,42",
                 xSolution:"700",
-                ySolution:"100",
+                ySolution:"10",
                 xSolbouMin:"680",
                 xSolbouMax:"720",
-                ySolbouMin:"80",
-                ySolbouMax:"120"
+                ySolbouMin:"0",
+                ySolbouMax:"30"
                 
             },
             mtri:{
                 id:"mtri",
                 points:"300,400 18,400 159,259 ",
-                fill:"pink",
+                fill:"black",
                 stroke:"1px red",
                 side1:"200",
                 side2:"200",
                 hypotenuse:"282,84",
                 xSolution:"600",
-                ySolution:"400",
+                ySolution:"310",
                 xSolbouMin:"580",
                 xSolbouMax:"620",
-                ySolbouMin:"380",
-                ySolbouMax:"420"
+                ySolbouMin:"290",
+                ySolbouMax:"330"
                 
-            }
+            },
         },
+        src:("../images/camel.xcf")
         
     },
-    level4:{
-        name:"horse",
-        polygons:{
-            rect:{
-                id:"rect",
-                x:"100",
-                y:"100",
-                width:"1000",
-                height:"440",
-                stroke:"5px black",
-            },
-            striA: {
-                id:"striA",
-                points:"310,341 410,441 210,441",
-                fill:"blue",
-                stroke:"1px red",
-                side1:"141,42",
-                side2:"141,42",
-                hypotenuse:"200",
-                xSolution:"310",
-                ySolution:"841",
-                xSolbouMin:"290",
-                xSolbouMax:"330",
-                ySolbouMin:"820",
-                ySolbouMax:"860",
+    
+    // level4:{
+    //     name:"horse",
+    //     polygons:{
+    //         rect:{
+    //             id:"rect",
+    //             x:"100",
+    //             y:"100",
+    //             width:"1000",
+    //             height:"440",
+    //             stroke:"5px black",
+    //         },
+    //         striA: {
+    //             id:"striA",
+    //             points:"310,341 410,441 210,441",
+    //             fill:"blue",
+    //             stroke:"1px red",
+    //             side1:"141,42",
+    //             side2:"141,42",
+    //             hypotenuse:"200",
+    //             xSolution:"310",
+    //             ySolution:"841",
+    //             xSolbouMin:"290",
+    //             xSolbouMax:"330",
+    //             ySolbouMin:"820",
+    //             ySolbouMax:"860",
                 
-            },
-            striB:{
-                id:"striB",
-                points:"710,341 810,441 610,441",
-                fill:"yellow",
-                stroke:"1px red",
-                side1:"141,42",
-                side2:"141,42",
-                hypotenuse:"200",
-                xSolution:"710",
-                ySolution:"841",
-                xSolbouMin:"690",
-                xSolbouMax:"730",
-                ySolbouMin:"820",
-                ySolbouMax:"860",
+    //         },
+    //         striB:{
+    //             id:"striB",
+    //             points:"710,341 810,441 610,441",
+    //             fill:"yellow",
+    //             stroke:"1px red",
+    //             side1:"141,42",
+    //             side2:"141,42",
+    //             hypotenuse:"200",
+    //             xSolution:"710",
+    //             ySolution:"841",
+    //             xSolbouMin:"690",
+    //             xSolbouMax:"730",
+    //             ySolbouMin:"820",
+    //             ySolbouMax:"860",
               
-            },
-            ltriA:{
-                id:"ltriA",
-                points:"310,341 510,541 310,741",
-                fill:"red",
-                stroke:"1px red",
-                side1:"282,84",
-                side2:"282,84",
-                hypotenuse:"400",
-                xSolution:"310",
-                ySolution:"441",
-                xSolbouMin:"290",
-                xSolbouMax:"330",
-                ySolbouMin:"420",
-                ySolbouMax:"460",
+    //         },
+    //         ltriA:{
+    //             id:"ltriA",
+    //             points:"310,341 510,541 310,741",
+    //             fill:"red",
+    //             stroke:"1px red",
+    //             side1:"282,84",
+    //             side2:"282,84",
+    //             hypotenuse:"400",
+    //             xSolution:"310",
+    //             ySolution:"441",
+    //             xSolbouMin:"290",
+    //             xSolbouMax:"330",
+    //             ySolbouMin:"420",
+    //             ySolbouMax:"460",
                 
-            },
-            ltriB:{
-                id:"ltriB",
-                points:"510,541 710,341 710,741",
-                fill:"green",
-                stroke:"1px red",
-                side1:"282,84",
-                side2:"282,84",
-                hypotenuse:"400",
-                xSolution:"510",
-                ySolution:"641",
-                xSolbouMin:"490",
-                xSolbouMax:"530",
-                ySolbouMin:"620",
-                ySolbouMax:"660",
+    //         },
+    //         ltriB:{
+    //             id:"ltriB",
+    //             points:"510,541 710,341 710,741",
+    //             fill:"green",
+    //             stroke:"1px red",
+    //             side1:"282,84",
+    //             side2:"282,84",
+    //             hypotenuse:"400",
+    //             xSolution:"510",
+    //             ySolution:"641",
+    //             xSolbouMin:"490",
+    //             xSolbouMax:"530",
+    //             ySolbouMin:"620",
+    //             ySolbouMax:"660",
                 
-            },
-            squ:{
-                id:"squ",
-                points:"210,241 310,341 210,441 110,341",
-                fill:"grey",
-                stroke:"1px red",
-                side:"141,42",
-                xSolution:"210",
-                ySolution:"341",
-                xSolbouMin:"190",
-                xSolbouMax:"230",
-                ySolbouMin:"320",
-                ySolbouMax:"360",
+    //         },
+    //         squ:{
+    //             id:"squ",
+    //             points:"210,241 310,341 210,441 110,341",
+    //             fill:"grey",
+    //             stroke:"1px red",
+    //             side:"141,42",
+    //             xSolution:"210",
+    //             ySolution:"341",
+    //             xSolbouMin:"190",
+    //             xSolbouMax:"230",
+    //             ySolbouMin:"320",
+    //             ySolbouMax:"360",
                 
-            },
-            rom:{
-                id:"rom",
-                points:"710,341 910,341 1010,441 810,441",
-                fill:"orange",
-                stroke:"1px red",
-                longSide:"200",
-                shortSide:"141,42",
-                xSolution:"710",
-                ySolution:"441",
-                xSolbouMin:"690",
-                xSolbouMax:"730",
-                ySolbouMin:"420",
-                ySolbouMax:"460",
+    //         },
+    //         rom:{
+    //             id:"rom",
+    //             points:"710,341 910,341 1010,441 810,441",
+    //             fill:"orange",
+    //             stroke:"1px red",
+    //             longSide:"200",
+    //             shortSide:"141,42",
+    //             xSolution:"710",
+    //             ySolution:"441",
+    //             xSolbouMin:"690",
+    //             xSolbouMax:"730",
+    //             ySolbouMin:"420",
+    //             ySolbouMax:"460",
                 
-            },
-            mtri:{
-                id:"mtri",
-                points:"251,10 251,292 110,141",
-                fill:"pink",
-                stroke:"1px red",
-                side1:"200",
-                side2:"200",
-                hypotenuse:"282,84",
-                xSolution:"210",
-                ySolution:"341",
-                xSolbouMin:"190",
-                xSolbouMax:"230",
-                ySolbouMin:"320",
-                ySolbouMax:"360",
+    //         },
+    //         mtri:{
+    //             id:"mtri",
+    //             points:"251,10 251,292 110,141",
+    //             fill:"pink",
+    //             stroke:"1px red",
+    //             side1:"200",
+    //             side2:"200",
+    //             hypotenuse:"282,84",
+    //             xSolution:"210",
+    //             ySolution:"341",
+    //             xSolbouMin:"190",
+    //             xSolbouMax:"230",
+    //             ySolbouMin:"320",
+    //             ySolbouMax:"360",
                 
-            }
-        },
+    //         }
+    //     },
        
-    },
+    // },
     
       
 }
