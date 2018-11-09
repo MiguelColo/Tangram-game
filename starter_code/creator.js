@@ -86,7 +86,7 @@ var levels={
             },
             rom:{
                 id:"rom",
-                points:"300,100 400,200 400,400 300,300",
+                points:"100,100 200,200 200,400 100,300",
                 fill:"orange",
                 stroke:"1px red",
                 longSide:"200",
