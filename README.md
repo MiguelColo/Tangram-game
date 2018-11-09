@@ -11,6 +11,9 @@ Las 7 piezas, llamadas "Tans", son las siguientes:
 
   - Manipulación del DOM a traves de las funciones creadas que asocián los distintos atributos a cada elemento de manera dinámica.
   - Encontrar la propiedad del elemento en sus distintos subniveles,con la que la función de trasladar la pieza funciona correctamente.
+  
+        this.xOrigin = e.toElement.attributes[1].ownerElement.points[0].x;
+        this.yOrigin = e.toElement.attributes[1].ownerElement.points[0].y;
 
 # Desde cero
 * No haría la generación manual de los elementos svg, ya que se pueden generar dinámicamente.
